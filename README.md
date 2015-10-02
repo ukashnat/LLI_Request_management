@@ -17,13 +17,21 @@ RequestHandler.java - klasa w której zostały zaimplementowane wszystkie metody
 
 
 showRequests(itemsPerPage) - wyświetla wszystkie wnioski z odpowienią ilością na stronie
+
 showFilteredRequests(String requestName, EnumStatus.Status status, int itemsPerPage) - wyświtla przefiltrowanie wnioski z odpowiednią ilością na stronie
+
 createNewRequest(String requestName, String requestDescription) - utworzenie nowego wniosku
+
 createNewVersion(Request r, EnumStatus.Status status) - tworzy historię zmiany stanu danego wniosku
+
 deleteRequest(String toBeDeleted, String requestReasonRejected, EnumStatus.Status s) - zmienia stan wniosku na Deleted
+
 verifyRequest(String toBeVerified, String requestDescription, EnumStatus.Status s) - zmienia stan wniosku na verified
+
 rejectRequest(String toBeRejected, String requestReasonRejected, EnumStatus.Status s) - zmienia stan wniosku na rejected
+
 acceptRequest(String toBeAccepted, EnumStatus.Status s) - zmienia stan wniosku na accepted
+
 publishRequest(String toBePublished, EnumStatus.Status s) - zmienia stan wniosku na published
 
 
