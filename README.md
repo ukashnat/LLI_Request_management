@@ -1,8 +1,8 @@
 # LLI_Request_management
-RequestManager
 
 Aplikacja ma za zadanie zmianę stanu wniosku w zależności od przechodzenia pomiędzy kolejnymi etapami weryfikacji.
 Projekt został napisany w środowisku Java (jdk1.7.0_51) i Netbeans 8.0.2. Projekt. Narzędziem wspomagającym jest Apache Maven.
+
 
 W tym celu zostało utworzne 4 pakiety:
 
@@ -11,8 +11,10 @@ com.requestmanager.controller - business logic
 com.requestmanager.model - model
 com.requestmanager.utils - helper
 
+
 RequestManager.java - inicjalizacja aplikacji. Utworzono 5 scenariuszy, które tworzą podstawowy flow zmiany stanów wniosków.
 RequestHandler.java - klasa w której zostały zaimplementowane wszystkie metody do obsługi zmianów stanu w aplikacji.
+
 
 showRequests(itemsPerPage) - wyświetla wszystkie wnioski z odpowienią ilością na stronie
 showFilteredRequests(String requestName, EnumStatus.Status status, int itemsPerPage) - wyświtla przefiltrowanie wnioski z odpowiednią ilością na stronie
@@ -28,10 +30,12 @@ publishRequest(String toBePublished, EnumStatus.Status s) - zmienia stan wniosku
 Wszystkie zmiany są zapisywane w pliku requests.xml w głownym katalogu aplikacji. Struktura drzewka umożliwia utworzenie relacji pomiędzy historią a wnioskiem.
 W celu wczytywania i zapisywania powyższej struktury użyto bibliotek JAXB.
 
+
 Model danych zawiera następujące definicje:
 Version.java - obiekt przechowujący historię zmian wniosku
 Requests.java - obiekt przechowujący listę wniosków
 Request.java - obiekt przechowujący wniosek
 EnumStatus.java - możliwe stany wniosku
+
 
 W pakiecie Utils znajdują się funkcje pomocnicze.
